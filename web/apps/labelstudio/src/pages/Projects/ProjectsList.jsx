@@ -55,7 +55,7 @@ const ProjectCard = ({ project }) => {
   }, [color]);
 
   return (
-    <Elem tag={NavLink} name="link" to={`/projects/${project.id}/data`} data-external>
+    <Elem tag={NavLink} name="link" to={`/projects/${project.id}/data?labeling=1`} data-external>
       <Block name="project-card" mod={{ colored: !!color }} style={projectColors}>
         <Elem name="header">
           <Elem name="title">
